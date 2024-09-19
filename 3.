@@ -1,0 +1,49 @@
+3. a. Addition:
+
+let a=10;
+let b=5;
+
+let sum=a+b;
+console.log(sum);
+
+output: 15
+
+3. b. subtraction:
+
+let a=10;
+let b=5;
+
+let sum1=a-b
+console.log(sum1);
+
+output: 5
+
+3. c. Multiplication:
+
+let a=10;
+let b=5; 
+
+let product=a*b;
+console.log(product);
+
+Output: 50
+
+3. d. Division:
+
+let a=10;
+let b=5; 
+
+let quotient=a/b;
+console.log(quotient);
+
+output: 2
+
+3. e. modulus:
+
+let a=10;
+let b=5;
+
+let modulus=a%b;
+console.log(modulus);
+
+output: 0
