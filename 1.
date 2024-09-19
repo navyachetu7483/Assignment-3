@@ -1,0 +1,46 @@
+1. a. Redeclare and reassign the var variable.
+
+var is a functional scope, we can reinitialize and we can redeclare the variable.
+
+var num=10; // num value is 10 
+var num=20; // num value is 20
+num=30; // num value is 30
+console.log(num)
+
+var num=40 // undefined
+
+var num=10; we have declare and assigned value to num.
+var num=20; we have redeclared num and assigned new value of 20 to num. here, it simply updates the value to 20. 
+num=30; we have reassigned the value of num to 30. num remains in the scope, it will just update the value.
+var num=40; here we have to initialized the data.
+
+1. b. Redeclare and reassign the let variable.
+
+let is a block scope, we can reinitialize but we can't redeclare the variable.
+
+let num=10; // num value is 10
+let num=20; // error: Identifier 'num' has already been declared
+num=30; // num value is 30
+console.log(num);
+
+let num=40;// error: Cannot access 'num' before initialization
+
+let num=10; we have declared and assigned value to num using let variable
+let num=20; we have redeclared the let variable but it will not redeclare it will through an error has Identifier 'num' has already been declared, as it is a block scope we cant redeclare.
+num=30; we have reassigned the value of num to 30, num remains in the scope, it will just update the value to 30.
+let num=40; here, it will try to move to the top to declare due to temporary dead zone, it is unable to declare. so, it throughs an error as Cannot access 'num' before initialization.
+
+1. c. Redeclare and reassign the const variable.
+
+const is the block scope, we cant redeclare or reinitialize.
+
+const num=10; // num value is 10
+const num=20; // error: Identifier 'num' has already been declared.
+num=30;
+console.log(num);
+
+const num=40; // error: Cannot access 'num' before initialization
+
+const num=10; we have declared and assigned the value to num using const variable.
+const num=20; here, if we redeclare the num in const variable it throughs an error, as it is a block scope, we cant redeclared the variable.
+num=30; here if we assigned the value to num t throughs an error as it is a block scope, we cant reassign th
