@@ -1,0 +1,21 @@
+9. Declare a string variable text with any sentence.
+
+a. Find and print the length of the string.
+
+let str="hello, welcome to my home"
+
+console.log(str.length);
+
+output: 25
+
+b. Access and print the first and last characters of the string.
+
+let str="hello, welcome to my home"
+
+console.log(str.charAt(0));
+
+output: h
+
+console.log(str.charAt(24));
+
+output: e
