@@ -1,0 +1,15 @@
+11. Declare a string variable sentence containing at least 10 words.
+
+a. slice method
+
+let str="Hi, welcome to my home, We always eat dinner together";
+console.log(str.slice(5,13));
+
+output: elcome t
+
+b. Substr method 
+
+let str="Hi, welcome to my home, We always eat dinner together";
+console.log(str.substr(0,20));
+
+output: Hi, welcome to my ho
