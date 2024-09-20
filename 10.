@@ -1,0 +1,15 @@
+10. Declare a string variable text with mixed case letters.
+
+a. Convert and print the string in all uppercase
+    
+let str="hEllO WoRld";
+console.log(str.toUpperCase());
+
+Output: HELLO WORLD
+
+b. Convert and print the string in all lowercase
+
+let str="hEllO WoRld";
+console.log(str.toLowerCase());
+
+Output: hello world
