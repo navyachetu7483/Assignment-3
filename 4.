@@ -1,0 +1,31 @@
+4. Increment and Decrement operators
+
+let x=10;
+
+// Increment postfix
+
+let x6=x++;
+console.log(x6); 
+
+output:10
+
+// Increment prefix
+
+let x5=++x;
+console.log(x5); 
+
+output:12
+
+// decrement postfix
+
+let x4=x--;
+console.log(x4); 
+
+output:12
+
+//decrement prefix
+
+let x3=--x;
+console.log(x3); 
+
+output:10
