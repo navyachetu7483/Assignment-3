@@ -1,0 +1,72 @@
+5. compare two variables
+
+a. Equal to 
+
+let a=7;
+let b=3;
+
+let isEqual = a==b;
+console.log(isEqual); 
+
+output: false
+
+b. Strict equal to
+
+let a=7;
+let b="7";
+
+console.log(a===b);
+
+output: false
+
+c. Not equal to 
+
+let a=7;
+let b="3";
+
+console.log(a!=b);
+
+output: true
+
+d. Strict not equal to
+
+let a=7;
+let b="3";
+
+console.log(a!==b);
+
+output: true
+
+e. Greater than
+
+let a=7;
+let b=10;
+
+console.log(a>b);
+
+output: false
+
+f. less than
+
+let a=7;
+let b=10;
+
+console.log(a<b);
+
+output: true
+
+g. Greater than or equal to
+
+let a=7;
+let b=10;
+
+console.log(a>=b);
+
+output: false
+
+i. Less than or equal to 
+
+let a=7;
+let b=10;
+
+console.log(a<=b);
