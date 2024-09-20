@@ -1,0 +1,12 @@
+7. Compare using null and undefined
+
+let toys = null;
+let price;
+
+console.log(toys==price);
+
+output: true
+
+console.log(toys===price);
+
+output: false
