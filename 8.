@@ -1,0 +1,23 @@
+8. Compare arrays and objects
+
+let arr1=[];
+let arr2=[];
+
+console.log(arr1==arr2); 
+
+output: false
+
+console.log(arr1===arr2); 
+
+output: false
+
+let obj1={};
+let obj2={};
+
+console.log(obj1==obj2); 
+
+output: false
+
+console.log(obj1===obj2);
+
+output: false
