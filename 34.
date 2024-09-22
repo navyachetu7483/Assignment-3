@@ -1,0 +1,27 @@
+function calculateFinalPrice(membershipType, totalPrice) {
+    let discountPercentage;
+    if (membershipType==="Regular") {
+        discountPercentage = 0;
+    } else if (membershipType==="Silver") {
+        discountPercentage = 10;
+    } else if (membershipType==="Gold" ) {
+        discountPercentage = 20;
+    }
+
+    let discountPrice = (discountPercentage / 100) * totalPrice;
+    let finalAmount = totalPrice - discountPrice;
+
+    return finalAmount;
+}
+
+console.log(calculateFinalPrice("Gold", 140));
+
+o/p: 112
+
+console.log(calculateFinalPrice("Silver", 50));
+
+o/p: 45
+
+console.log(calculateFinalPrice("Regular", 113));
+
+o/p: 113
