@@ -1,0 +1,17 @@
+46. function countDown(start) {
+    for (let i = start; i >= 0; i--) {
+        console.log(i);
+
+    }
+}
+
+let startnumber=6;
+countDown(startnumber);
+
+output: 6
+5
+4
+3
+2
+1
+0
