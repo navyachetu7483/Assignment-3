@@ -1,0 +1,13 @@
+42. const numbers=[10, 24, 56, 23, 45, 56]
+
+function summationOfFunction(){
+    let sum=0;
+    for(let i=0; i<numbers.length; i++){
+        sum += numbers[i];
+    }
+    return sum;
+}
+
+console.log(summationOfFunction(numbers));
+
+output: 214
