@@ -1,0 +1,9 @@
+25.Declare an array words with values ["Hello", "world", "this", "is", "JavaScript"].
+
+a. Use the array method to join the words into a single sentence with spaces, and print the result.
+
+let words=["Hello", "world", "this", "is", "JavaScript"];
+let sentence=words.join(" ")
+console.log(sentence); 
+
+output: Hello world this is JavaScript
