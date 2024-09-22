@@ -1,0 +1,22 @@
+27. Write a function temperatureStatus
+
+function temperatureStatus(temp) {
+    if(temp<15){
+        return "Cold";
+    }else if(temp>=15 && temp<=30){
+        return "Warm";
+    }else {
+        return "Hot";
+    }
+}
+console.log(temperatureStatus(10));
+
+output: Cold	
+
+console.log(temperatureStatus(30));
+
+output: Warm
+
+console.log(temperatureStatus(40));
+
+output: Hot
