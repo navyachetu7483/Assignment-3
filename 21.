@@ -1,0 +1,30 @@
+21. Declare an array arr with values [1, 2, 3].
+
+a. Array to string
+
+let arr=[1, 2, 3];
+console.log(arr.toString()); 
+
+output: 1, 2, 3
+
+b. array to number
+
+let num=Number(arr);
+console.log(num); 
+
+output: NaN
+
+c. obj to string
+
+const person={name: "abc", age: 30};
+const str=String(person);
+console.log(str); 
+
+output: [object Object]
+
+d. obj to number
+
+const num1=Number(person);
+console.log(num1); 
+
+output: NaN
