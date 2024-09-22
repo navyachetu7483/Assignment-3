@@ -1,0 +1,40 @@
+30. Write a function weatherAdvice 
+
+function weatherAdvice(weatherConditon) {
+    switch(weatherConditon){
+        case "Sunny":
+            message="Wear Sunglasses";
+            break;
+        case "Rainy":
+            message="Take an umbrella";
+            break;
+        case "Snowy":
+            message="Wear a heavy coat";
+            break;
+        case "Cloudy":
+            message="Might rain; carry an umbrella";
+            break;
+        default:
+            message="Weather condition not recognized";
+    }
+    return message;
+}
+console.log(weatherAdvice("Sunny"));
+
+output: Wear Sunglasses
+
+console.log(weatherAdvice("Rainy"));
+
+output: Take an umbrella
+
+console.log(weatherAdvice("Snowy"));
+
+output: Wear a heavy coat
+
+console.log(weatherAdvice("Cloudy"));
+
+output: Might rain; carry an umbrella
+
+console.log(weatherAdvice("winter"));
+
+output: Weather condition not recognized
