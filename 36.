@@ -1,0 +1,27 @@
+function suggestClothing(Celsius){
+    if(Celsius<0){
+        return "Wear a heavy coat and thermal wear";
+    }else if(Celsius>=0 && Celsius<=15){
+        return "Wear a jacket";
+    }else if(Celsius>=16 && Celsius<=25){
+        return "Wear a light sweater";
+    }else{
+        return "Wear shorts and a t-shirt";
+    }
+}
+
+console.log(suggestClothing(-1));
+
+output: Wear a heavy coat and thermal wear
+
+console.log(suggestClothing(10));
+
+output: Wear a jacket
+
+console.log(suggestClothing(20));
+
+output: Wear a light sweater
+
+console.log(suggestClothing(27));
+
+output: Wear shorts and a t-shirt
