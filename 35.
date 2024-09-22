@@ -1,0 +1,17 @@
+function calculateInvestmentReturn(principalAmount, interestRate, numberOfYears) {
+    let investmentType;
+    if(interestRate<=5){
+        investmentType= "Lowrisk";
+    } else if(interestRate>5 && interestRate<=10){
+        investmentType="Mediumrisk";
+    }else{
+        investmentType="Highrisk";
+    }
+
+    totalAmount = principalAmount + (principalAmount * (interestRate/100) * numberOfYears)
+    return investmentType + (" - ") + totalAmount;
+}
+
+console.log(calculateInvestmentReturn(10000, 10, 5));
+
+o/p: Mediumrisk - 15000
