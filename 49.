@@ -1,0 +1,24 @@
+49. function generateTriangle(numberOfStars) {
+    let triangle = '';
+
+    for (let i = 1; i <= numberOfStars; i++) {
+        
+        for (let j = 1; j <= numberOfStars - i; j++) {
+            triangle += ' ';
+        }
+        
+        for (let k = 1; k <= (2 * i - 1); k++) {
+            triangle += '*';
+        }
+        triangle += '\n';
+    }
+
+    return triangle;
+}
+
+console.log(generateTriangle(3));
+
+output: 
+  *
+ ***
+*****
