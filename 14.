@@ -1,0 +1,7 @@
+14. Declare a string variable words containing a list of comma-separated values(eg let words = "apple,banana,orange,grape";)
+
+let words = "apple,banana,orange,grape"
+let arr=words.split(",");
+console.log(arr);
+
+output:  ['apple', 'banana', 'orange', 'grape']
