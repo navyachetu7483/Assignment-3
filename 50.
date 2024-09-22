@@ -1,0 +1,19 @@
+function intersectionOfArray(arr1, arr2) {
+    let intersection = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j] && !intersection.includes(arr1[i])) {
+                intersection.push(arr1[i]);
+            }
+        }
+    }
+
+    return intersection;
+}
+
+let arr1=[2, 4, 6, 7, 2, 5]
+let arr2=[4, 8, 9, 7, 3, 5]
+console.log(intersectionOfArray(arr1, arr2));
+
+output: [4, 7, 5]
