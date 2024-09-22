@@ -1,0 +1,8 @@
+12. Find and Replace a Word
+
+let sentence="I am currently working on a new project"
+let sent=sentence.lastIndexOf("project"); //position of project is 32
+let replaceword=sentence.replace("project", "Javascript project") 
+console.log(replaceword); 
+
+output: I am currently working on a new Javascript project.
