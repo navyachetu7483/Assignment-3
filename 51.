@@ -1,0 +1,16 @@
+function getUniqueElements(arr) {
+    const uniqueElements = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (!uniqueElements.includes(arr[i])) {
+            uniqueElements.push(arr[i]); 
+        }
+    }
+
+    return uniqueElements;
+}
+
+let arr=[1, 2, 2, 3, 3, 4, 5, 6, 7, 7]
+console.log(getUniqueElements(arr));
+
+output: [1, 2, 3, 4, 5, 6, 7]
