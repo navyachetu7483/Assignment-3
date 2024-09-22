@@ -1,0 +1,25 @@
+function convertCurrency(amount, currencyType) {
+    let convertedAmount;
+    if(currencyType == "USD"){
+        convertedAmount = amount*75;
+    }else if(currencyType == "EUR"){
+        convertedAmount = amount*90;
+    }else if(currencyType == "GBP"){
+        convertedAmount = amount*100;
+    }else{
+        return "Invalid currency"
+    }
+    return convertedAmount;
+}
+
+console.log(convertCurrency(100, "USD"));
+
+output: 7500
+
+console.log(convertCurrency(147, "EUR"));
+
+output: 13230
+
+console.log(convertCurrency(123, "GBP"));
+
+output: 12300
