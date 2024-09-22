@@ -1,0 +1,28 @@
+function determineGameLevel(score){
+    if(score>=0 && score<=49){
+        level= "Beginner";
+        motivationalmessage="Welcome to the adventure! Every expert was once a beginner. Embrace the learning process, enjoy the small victories, and remember: progress is progress, no matter how small. Keep pushing forward—you've got this!";
+    }else if (score>=50 && score<=79){
+        level="Intermediate";
+        motivationalmessage="You're on the right track! Your skills are developing, and you’re starting to see the fruits of your hard work. Stay focused, keep experimenting, and don’t be afraid to challenge yourself. The next level is just around the corner—keep going!";
+    }else if(score>=80 && score<=100){
+        level="Advanced";
+        motivationalmessage="You're in the elite league now! Your dedication and skill have brought you far. Remember to share your knowledge, inspire others, and continue to push your limits. Greatness is a journey, not a destination. Keep striving for excellence—you're capable of amazing things!";
+    }else {
+        return "Invalid Score";
+    }
+    return level + (" - ") + motivationalmessage;
+    
+}
+
+console.log(determineGameLevel(20));
+
+output: Beginner - Welcome to the adventure! Every expert was once a beginner. Embrace the learning process, enjoy the small victories, and remember: progress is progress, no matter how small. Keep pushing forward—you've got this!
+
+console.log(determineGameLevel(60));
+
+output: Intermediate - You're on the right track! Your skills are developing, and you’re starting to see the fruits of your hard work. Stay focused, keep experimenting, and don’t be afraid to challenge yourself. The next level is just around the corner—keep going!
+
+console.log(determineGameLevel(90));
+
+output: Advanced - You're in the elite league now! Your dedication and skill have brought you far. Remember to share your knowledge, inspire others, and continue to push your limits. Greatness is a journey, not a destination. Keep striving for excellence—you're capable of amazing things!
