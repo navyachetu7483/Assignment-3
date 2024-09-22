@@ -1,0 +1,20 @@
+45. function findMinimum(arr) {
+    if (arr.length === 0) {
+        return undefined; 
+    }
+
+    let min = arr[0]; 
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i]; 
+        }
+    }
+
+    return min; 
+}
+
+let arr=[4, 7, 8, 97, 56]
+console.log(findMinimum(arr));
+
+output: 4	
