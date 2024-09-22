@@ -1,0 +1,10 @@
+15. Declare a string variable text with a sentence.
+
+let text="We are learning to play the guitar"
+console.log(text.includes("learning")); 
+
+output: true
+
+console.log(text.includes("orange")); 
+
+output: false
