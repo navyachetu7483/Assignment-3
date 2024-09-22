@@ -1,0 +1,24 @@
+function secondMinimumNumber(arr) {
+    let MinimumNumber = arr[0];
+    let secondMinimumNumber = arr[1];
+  
+    if (arr[0] > arr[1]) {
+      MinimumNumber = arr[1];
+      secondMinimumNumber = arr[0];
+    }
+  
+    for (let i = 2; i < arr.length; i++) {
+      if (arr[i] < MinimumNumber) {
+        secondMinimumNumber = MinimumNumber;
+        MinimumNumber = arr[i];
+      } else if (arr[i] < secondMinimumNumber && arr[i !== MinimumNumber]) {
+        secondMinimumNumber = arr[i];
+      }
+    }
+    return secondMinimumNumber;
+  }
+
+  let arr=[2, 3, 6, 8, 9, 10];
+  console.log(secondMinimumNumber(arr));
+
+output: 3
