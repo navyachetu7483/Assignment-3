@@ -1,0 +1,15 @@
+function countElementOccurrance(arr){
+    const elementCount={};
+    for(let i=0; i<arr.length; i++){
+        const element =arr[i];
+        if(elementCount[element]){
+            elementCount[element]++;
+        }else {
+            elementCount[element]=1;
+        }
+    }
+    return elementCount;
+}
+
+let arr=[1, 2, 2, 3, 4, 3, 5, 6, 6, 7, 6, 2]
+console.log(countElementOccurrance(arr));
