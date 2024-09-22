@@ -1,0 +1,16 @@
+18.Declare a boolean variable isTrue with a value of true.
+
+a. Convert isTrue to a string and print the result.
+
+let isTrue=true;
+console.log(isTrue.toString());
+
+output: true
+
+b. Convert isTrue to a number and print the result.
+
+let isTrue=true;
+let num=Number(isTrue);
+console.log(num);
+
+output: 1
