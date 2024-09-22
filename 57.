@@ -1,0 +1,16 @@
+function removeFalsyValues(arr) {
+    const res = []; 
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) { 
+            res.push(arr[i]); 
+        }
+    }
+
+    return res; 
+}
+
+let arr=[1, 0, 2, "", 3, false, 4, null, 6, undefined, 7, NaN]
+console.log(removeFalsyValues(arr));
+
+output: [1, 2, 3, 4, 6, 7]
