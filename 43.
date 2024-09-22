@@ -1,0 +1,20 @@
+43. const bike={
+    name:"Himalayan",
+    model:2022,
+    color:"black",
+    weight:250,
+};
+
+function numberOfProperties(Obj){
+    let propertyCount=0;
+    for(let prop in Obj){
+        if(Obj.hasOwnProperty(prop)){
+            propertyCount++;
+        }
+    }
+    return propertyCount;
+}
+
+console.log(numberOfProperties(bike));
+
+output: 4
