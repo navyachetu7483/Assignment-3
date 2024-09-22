@@ -1,0 +1,16 @@
+ function findLongestWord(sentence) {
+    const words = sentence.split(' ');
+    let longestWord = '';
+    for (let word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word; 
+        }
+    }
+
+    return longestWord; 
+}
+
+let sentence="She exercises every morning";
+console.log(findLongestWord(sentence));
+
+output: exercises
