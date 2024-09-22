@@ -1,0 +1,38 @@
+20. Declare the following variables with different values:
+
+let num1=0;
+let num2=1;
+let str1=" ";
+let str2="Hello!"
+let toNull=null;
+let toUndefined = undefined;
+
+let res=Boolean(num1);
+console.log(res); 
+
+output: false
+
+let output=Boolean(num2);
+console.log(output);
+
+output: True
+
+let res1=Boolean(str1);
+console.log(res1); 
+
+output: True
+
+let output1=Boolean(str2);
+console.log(output1); 
+
+output: True
+
+let res3=Boolean(toNull); 
+console.log(res3); 
+
+output: false
+
+let output3=Boolean(toUndefined); 
+console.log(output3); 
+
+output: false
