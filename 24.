@@ -1,0 +1,17 @@
+24.Declare an array colors with values ["red", "green", "blue", "yellow", "purple"].
+
+let colors=["red", "green", "blue", "yellow", "purple"];
+colors.splice(2,1);
+console.log(colors); 
+
+output: ['red', 'green', 'yellow', 'purple']
+
+colors.splice(2,0,"orange","pink")
+console.log(colors); 
+
+output: ['red', 'green', 'orange', 'pink', 'yellow', 'purple']
+
+let colorsSubstr=colors.splice(0,3)
+console.log(colorsSubstr); 
+
+output:	 ['red', 'green', 'orange']
