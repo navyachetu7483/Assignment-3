@@ -1,0 +1,6 @@
+13. Declare a string variable str with extra spaces at the beginning and end.
+
+let str="         Hello world          ";
+console.log(str.trim());
+
+output: Hello world
