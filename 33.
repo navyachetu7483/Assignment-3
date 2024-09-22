@@ -1,0 +1,57 @@
+function advancedCalculator(calculator){
+    switch(calculator){
+        case "+":
+            result=a+b;
+            break;
+        case "-":
+            result=a-b;
+            break;
+        case "*":
+            result=a*b;
+            break;
+        case "/":
+            if (b === 0) {
+                return "Division by zero is not allowed";
+              } else {
+                result = a / b; 
+                break;
+              }
+        case "%":
+            result=a%b;
+            break;
+        default:
+            result="Invalid operator";
+    }
+
+    return result;
+}
+
+let a=5;
+let b=3;
+
+console.log(advancedCalculator("+")); 
+
+o/p: 8
+
+console.log(advancedCalculator("-"));
+
+o/p:2
+
+console.log(advancedCalculator("*"));
+
+o/p:15
+
+console.log(advancedCalculator("/"));
+
+o/p:1.6666666666666667
+
+console.log(advancedCalculator("%"));
+
+o/p: 2
+
+let a=5;
+let b=0;
+
+console.log(advancedCalculator("/"));
+
+o/p: Division by zero is not allowed
