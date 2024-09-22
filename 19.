@@ -1,0 +1,17 @@
+19. Declare a number variable num with a value of 456.
+
+a. method 1
+
+let num=456;
+let str=String(num);
+console.log(str); 
+
+output: 456
+
+b. method 2
+
+let num=456
+let str=num.toString();
+console.log(str);
+
+output:4
