@@ -1,0 +1,37 @@
+28. Write a function isLeapYear 
+
+function isLeapYear(year) {
+    if(year%4==0){
+        if(year%100==0){
+            if(year%400==0){
+                return "Leap year";
+            } else {
+                return "Not a Leap year";
+            }
+        } else {
+            return "Leap year";
+        }
+    } else {
+        return "Not a leap year"
+    }
+}
+
+console.log(isLeapYear(2016)); 
+
+output: leap year
+
+console.log(isLeapYear(2017)); 
+
+output: Not a leap year
+
+console.log(isLeapYear(2018)); 
+
+output: Not a leap year
+
+console.log(isLeapYear(2019)); 
+
+output: Not a leap year
+
+console.log(isLeapYear(2020)); 
+
+output: leap year
