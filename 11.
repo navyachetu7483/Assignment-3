@@ -1,0 +1,55 @@
+11. Declare a string variable sentence containing at least 10 words.
+
+a. slice method
+
+let str="Hi, welcome to my home, We always eat dinner together";
+let home=str.slice(0,22);
+console.log(home); 
+
+output: Hi, welcome to my home
+
+b. substring method
+
+let substring=str.substring(3,27);
+console.log(substring); 
+
+output: welcome to my home, We
+
+c. substr method
+
+let substr=str.substr(4,30)
+console.log(substr); 
+
+output: welcome to my home, We always
+
+d. split method
+
+let splitstring=str.split(",")
+let slicestr=splitstring + (", ") +str.slice(4,22);
+console.log(slicestr); 
+
+output: Hi, welcome to my home, We always eat dinner together, welcome to my home
+
+e. charAt method
+
+let char=str.charAt(19);
+console.log(char); 
+output: o
+
+f. uppercase method
+
+let upperstr=str.toUpperCase();
+let partstr=upperstr+str.slice(26,45)
+partstr=partstr.toUpperCase()
+console.log(partstr); 
+
+output: HI, WELCOME TO MY HOME, WE ALWAYS EAT DINNER TOGETHER ALWAYS EAT DINNER 
+
+g. lowercase method
+
+let lowerstr=str.toLowerCase();
+let starstr=lowerstr+(" ") +str.slice(4,34)
+starstr=starstr.toLowerCase();
+console.log(starstr); 
+
+output: hi, welcome to my home, we always eat dinner together welcome to my home, we always 
