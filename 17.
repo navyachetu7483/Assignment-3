@@ -1,0 +1,23 @@
+17.Declare a string variable strNumber with a value of "123.456".
+
+a. Number()
+
+let strNumber="123.456"
+let num=Number(strNumber);
+console.log(num);
+
+Output: 123.456
+
+b. parseInt()
+
+let num2=parseInt(strNumber);
+console.log(num2);
+
+output: 123
+
+c. parseFloat()
+
+let num3=parseFloat(strNumber);
+console.log(num3);
+
+output: 123.456
