@@ -1,0 +1,14 @@
+23. Declare an array numbers with values [10, 20, 30, 40, 50].
+
+let numbers=[10, 20, 30, 40, 50];
+console.log(numbers.length); 
+
+output: 5
+
+console.log(numbers[0]); 
+
+output: 10
+
+console.log(numbers[4]); 
+
+output: 50
