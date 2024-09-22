@@ -1,0 +1,16 @@
+26. Write a function checkVotingEligibility 
+
+function checkVotingEligibility(age) {
+if(age>=18){
+    return "eligible to vote";
+}else{
+    return "Not eligible to vote";
+}
+}
+console.log(checkVotingEligibility(50));
+
+output: eligible to vote
+
+console.log(checkVotingEligibility(10));
+
+output: Not eligible to vote
