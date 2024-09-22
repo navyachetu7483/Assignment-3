@@ -1,0 +1,30 @@
+function generateFibonacci(specifiedValue) {
+    let fibonacciSequence = [];
+    let a = 0;
+    let b = 1;
+
+    while (a <= specifiedValue) {
+        fibonacciSequence.push(a);
+        let next = a + b; 
+        a = b; 
+        b = next; 
+    }
+
+    return fibonacciSequence;
+}
+
+console.log(generateFibonacci(10));
+
+output: [0, 1, 1, 2, 3, 5, 8]
+
+console.log(generateFibonacci(30));
+
+output: [0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+console.log(generateFibonacci(60));
+
+output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+console.log(generateFibonacci(90));
+
+output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
